@@ -26,6 +26,7 @@
     <properties>
         <java.version>11</java.version>
         <springfox.version>3.0.0</springfox.version>
+        <spock.version>2.0-M3-groovy-2.5</spock.version>
 
         <!-- Docker -->
         <docker.image.prefix>harmdw</docker.image.prefix>
@@ -112,6 +113,20 @@
             <groupId>net.logstash.logback</groupId>
             <artifactId>logstash-logback-encoder</artifactId>
             <version>6.3</version>
+        </dependency>
+
+        <!-- Spock -->
+        <dependency>
+            <groupId>org.spockframework</groupId>
+            <artifactId>spock-core</artifactId>
+            <version>${spock.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.spockframework</groupId>
+            <artifactId>spock-spring</artifactId>
+            <version>${spock.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
